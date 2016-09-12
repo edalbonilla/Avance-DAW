@@ -1,0 +1,252 @@
+@media (max-width: 768px){
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #EEEEEE;
+}
+
+header{
+	width: 100%;
+	background-color: black;
+	height: 6%;
+}
+
+.cabecera{
+	width: 100%;
+	height: 6%;
+	background: black;
+	display: inline-block;
+	position: fixed;
+	z-index: 10;
+	color: white;
+	text-align: right;
+	padding: 20px;
+
+}
+nav.principal li{
+	display: block;
+	width: 100%;
+	border-top: 1px solid white;
+	background: #d32f2f;
+	height: auto;
+	vertical-align: center;
+}
+nav.principal li a{
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: white;
+	padding: 10px 0;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	overflow: hidden;
+}
+.principal li .sub{
+	height: 15px;
+	color: white;
+	font-size: 12px;
+	padding: 10px 0 15px 0;
+	background: black;
+	text-align: center;
+	padding-left: 4px;
+	overflow: hidden;
+}
+.principal li a:hover{
+	background: #b71c1c;
+}
+.desa{
+	width: 200px !important;
+}
+label{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	margin-right: 5px;
+}
+input{
+	display: none;
+}
+.menu{
+	display: none; 
+	position: static;
+}
+input[id^="drop"]:checked + .menu{
+	/* style */
+	display: inline-block;
+	width: 100%;
+}
+input[id^="drop"]:checked + label.icono{
+	color: #d32f2f;
+}
+footer{
+	display: none;
+}
+
+}
+/*ESCRITORIO*/
+@media (min-width: 769px){
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #EEEEEE;
+}
+
+header{
+	width: 100%;
+	height: 10%;
+	background-color: black;
+}
+label, input{
+	display: none;
+}
+.menu{
+	display: block;
+}
+.cabecera{
+	background-color: black;
+	text-align: right;
+	width: 100%;
+	height: 10%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+nav{
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.cabecera nav ul{
+	list-style: none;
+}
+.cabecera .principal ul li{
+	text-align: center;
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+}
+.cabecera nav ul li a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bolder;
+	line-height: 2;
+	font-size: 14px;
+	padding: 0 .5em;
+}
+.cabecera nav ul li a:hover, td a:hover, .sitio:hover{
+	color: #F50057;
+}
+.logo{
+	display: inline-block;
+	vertical-align: top;
+	position: fixed;
+	z-index: 2000;
+	top: 3px;
+	left: 15px;
+	width: 350px;
+}
+
+nav.oculto{
+	position: relative;
+	width: 100px;
+	display: none;
+	background: black;
+	margin: 0 auto;
+	top: 15px;
+}
+nav.oculto li{
+	width: 100px;
+	text-align: left;
+}
+nav.oculto li a{
+	border-top: 1px solid white;
+	display: inline-block;
+	width: 100px;
+}
+nav  li:hover> nav.oculto{
+	display: block;		
+}
+footer{
+	width: 100%;
+	background-color: black;
+	height: 125px;
+	margin-top: 15px;
+	position: relative;
+	clear: both;
+}
+table{
+	margin-top: 10px;
+	margin-left: 35px;
+	width: 50%;
+	border-right: 2px solid white;
+}
+
+table td {
+	padding: 2px 10px;
+	width: 15%;
+
+}
+td a{
+	color: white;
+	text-decoration: none;
+}
+.sitio{
+	color: white;
+	display: inline-block;
+	position: absolute;
+	right: 35%;
+	top: 35px;
+	text-decoration: none;
+	
+}
+.siguenos{
+	position: absolute;
+	top: 30px;
+	right: 45px;
+	width: 255px;
+}
+.social{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+.social img{
+	width: 30px;
+	display: inline-block;
+}
+.social img:hover{
+	width: 32px;
+}
+.foot{
+	width: 100%;
+	background-color: #424242;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+}
+}
+
+
